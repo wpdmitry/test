@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="/css/list_repo.css">
+
+    <title>iGit</title>
+</head>
+<body>
+    <header class="header">
+        <h1>Список репозиториев</h1>
+    </header>
+
+    <section class="repos">
+        <ul class="repos__list">
+            {{#each listRepos}}
+                <li class="repos__item">
+                    <a href="/{{ this }}/master/tree">{{ this }}</a>
+                </li>
+            {{/each}}
+        </ul>
+    </section>
+</body>
+</html>

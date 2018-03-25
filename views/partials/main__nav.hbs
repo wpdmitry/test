@@ -1,0 +1,18 @@
+<nav class="main__nav">
+    <div class="controls">
+        <div class="controls__branch">
+            <select class="controls__select-branch" title="branches">
+                {{#each branches}}
+                    {{#if active }}
+                        <option value="{{ ../repo }}/{{ name }}/tree" selected>{{ name }}</option>
+                    {{else}}
+                        <option value="{{ ../repo }}/{{ name }}/tree">{{ name }}</option>
+                    {{/if}}
+                {{/each}}
+            </select>
+        </div>
+        <div class="controls__path">{{ repo }}{{ path }}</div>
+        <div class="controls__history-commits"><a href="/{{ repo }}/{{ branch }}/commits">История коммитов</a></div>
+        <div class="controls__list-repos"><a href="/">Список репозиториев</a></div>
+    </div>
+</nav>

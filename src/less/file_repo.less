@@ -1,0 +1,52 @@
+@import "partials/header";
+@import "partials/main";
+@import "partials/controls";
+
+.file {
+
+  &__info {
+    display: flex;
+    box-shadow: 0 0 0 1px #e6e6e6;
+    background-color: #f9f9f9;
+  }
+
+  &__name {
+    padding: 10px 40px;
+    font-size: 1.3rem;
+    flex-grow: 1;
+  }
+
+  &__btn-back {
+    font-size: 1rem;
+    width: 10%;
+    outline: none;
+    border: 0;
+    background-color: rgba(255, 163, 0, 0.67);
+
+    &:hover {
+      background-color: rgba(255, 163, 0, 0.87);
+    }
+  }
+
+  &__list {
+    color: #aaaaaa;
+    box-shadow: 0 0 0 1px #e6e6e6;
+    overflow-x: scroll;
+  }
+
+  &__item {
+    white-space: pre;
+    padding: 2px 10px;
+    box-shadow: -1px 0 0 0 #e6e6e6;
+
+    &:nth-child(2n) {
+      background-color: #f5f5f5;
+    }
+  }
+
+  &__code {
+    color: #000;
+    font-family: monospace;
+    font-size: 1.1rem;
+  }
+}

@@ -1,0 +1,74 @@
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  box-shadow: 0 1px 0 0 #e6e6e6;
+}
+.header__name {
+  padding: 20px;
+  font-size: 1.4rem;
+  align-self: center;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.main {
+  margin: 20px auto;
+  width: 80%;
+  box-shadow: 0 0 0 1px #e6e6e6;
+  border-radius: 5px;
+}
+.main__nav {
+  height: 50px;
+  box-sizing: border-box;
+  padding: 40px 20px;
+}
+.controls {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  font-size: 1.1rem;
+}
+.controls a {
+  color: black;
+  text-decoration: none;
+}
+.controls__select-branch {
+  padding: 4px;
+  font-size: 1rem;
+}
+.controls__path {
+  margin-left: 10px;
+  flex-grow: 1;
+}
+.controls__history-commits :hover {
+  box-shadow: 0 1px 0 0 orange;
+}
+.controls__list-repos {
+  margin-left: 10px;
+}
+.controls__list-repos :hover {
+  box-shadow: 0 1px 0 0 orange;
+}
+.controls__history-commits {
+  visibility: hidden;
+}
+.commits__list {
+  list-style-type: none;
+  padding: 0;
+}
+.commits__item {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 10px 0;
+  justify-items: center;
+  box-shadow: 0 1px 0 0 #e6e6e6;
+}
+.commits__item:first-child {
+  font-weight: bold;
+  box-shadow: 0 -1px 0 0 #e6e6e6, 0 1px 0 0 #e6e6e6;
+  pointer-events: none;
+}
+.commits__item:hover {
+  background-color: #f2f2f2;
+}

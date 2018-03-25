@@ -1,0 +1,14 @@
+<section class="main__content">
+    <div class="file">
+        <div class="file__info">
+            <div class="file__name">{{ content.name }}</div>
+            <button class="file__btn-back" data-go-back="{{ pathBack }}">Назад</button>
+        </div>
+
+        <ol class="file__list">
+            {{#each content.text}}
+                <li class="file__item"><span class="file__code">{{ this }}</span></li>
+            {{/each}}
+        </ol>
+    </div>
+</section>

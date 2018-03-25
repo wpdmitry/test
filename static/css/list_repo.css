@@ -1,0 +1,26 @@
+.header {
+  text-align: center;
+  color: orange;
+  margin-top: 20vh;
+}
+.repos {
+  width: 20%;
+  margin: 0 auto;
+}
+.repos__list {
+  padding: 0;
+  list-style-type: none;
+}
+.repos__item {
+  padding: 10px 0;
+  font-size: 1.3rem;
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+}
+.repos__item:hover {
+  box-shadow: 0 1px 0 0 orange;
+}
+.repos a {
+  text-decoration: none;
+  color: #000000;
+}

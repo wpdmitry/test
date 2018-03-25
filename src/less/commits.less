@@ -1,0 +1,46 @@
+@import "partials/header";
+@import "partials/main";
+@import "partials/controls";
+
+.controls {
+  &__history-commits {
+    visibility: hidden;
+  }
+}
+
+.commits {
+
+  &__list {
+    list-style-type: none;
+    padding: 0;
+  }
+
+  &__item {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 10px 0;
+    justify-items: center;
+    box-shadow: 0 1px 0 0 #e6e6e6;
+
+    &:first-child {
+      font-weight: bold;
+      box-shadow: 0 -1px 0 0 #e6e6e6, 0 1px 0 0 #e6e6e6;
+      pointer-events: none;
+    }
+
+    &:hover {
+      background-color: #f2f2f2;
+    }
+  }
+
+  &__date {
+
+  }
+
+  &__auhor {
+  }
+
+  &__commit {
+
+  }
+}

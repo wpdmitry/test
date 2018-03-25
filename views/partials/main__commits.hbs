@@ -1,0 +1,19 @@
+<section class="main__commits">
+    <div class="commits">
+        <ul class="commits__list">
+            <li class="commits__item">
+                <div class="commits__date">Дата</div>
+                <div class="commits__author">Автор</div>
+                <div class="commits__commit">комит</div>
+            </li>
+
+            {{#each commits}}
+                <li class="commits__item" data-go="{{ ../repo }}/{{ commit }}/tree">
+                    <div class="commits__date">{{ date }}</div>
+                    <div class="commits__author">{{ author }}</div>
+                    <div class="commits__commit">{{ shortCommit }}</div>
+                </li>
+            {{/each}}
+        </ul>
+    </div>
+</section>

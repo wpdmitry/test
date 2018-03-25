@@ -1,0 +1,20 @@
+<section class="main__tree">
+    <div class="tree">
+        <ul class="tree__list">
+            {{#if pathBack}}
+                <li class="tree__item" data-go="{{ pathBack }}">
+                    ..
+                </li>
+            {{/if}}
+
+            {{#each tree}}
+                <li class="tree__item" data-go="{{ path }}">
+                    <div class="tree__icon">
+                        <img class="tree__img" src="{{ img }}" alt="Иконка">
+                    </div>
+                    <div class="tree__name">{{ name }}</div>
+                </li>
+            {{/each}}
+        </ul>
+    </div>
+</section>
